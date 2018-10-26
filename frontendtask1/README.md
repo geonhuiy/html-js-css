@@ -1,5 +1,5 @@
 # CSS Exercise - Image List
-Attached screenshot
+Attached a screenshot
   
 >Screenshot of html:
 ![Example layout](img/example.png)
