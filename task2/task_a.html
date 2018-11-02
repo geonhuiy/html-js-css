@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task A</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Form validation HTML5</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Your valuable personal information here
+            </legend>
+            <input type="text"  placeholder="First Name" required><br>
+            <input type="text"  placeholder="Lastname" required><br>
+            <input type="email" placeholder="Email" pattern="[a-z0-9._-%+]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+            <input type="text"  placeholder="Phone Number" pattern="[+][0-9]{10}" required><br>
+            <input type="text" placeholder="Address"><br>
+            <input type="text"  placeholder="Postal Code" pattern="[0-9]{5}"><br>
+            <input type="password"  placeholder="Password" required><br>
+            <input type ="Submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
