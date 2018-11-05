@@ -1,7 +1,5 @@
 const firstname = document.querySelector("#firstname");
-const fnameformat = /^[A-za-z]/;
 const lastname = document.querySelector("#lastname");
-const lnameformat = /^[A-za-z]/;
 const email = document.querySelector("#email");
 const emailformat = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
 const phonenumber = document.querySelector("#phonenumber");
