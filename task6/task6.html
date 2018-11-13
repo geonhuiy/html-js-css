@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<ul class = "fruits">
+	<li>Apple</li>
+	<li>Banana</li>
+	<li data-foodtype="squishy">Orange</li>
+	<li>Pear</li>
+	<li>Kiwi</li>
+	<li id="berry">Strawberry</li>
+</ul>
+<script>
+//=====================================================================
+const berry = document.getElementById("berry");
+berry.style.backgroundColor = "red";
+console.log(berry);
+console.log("I found the berry : " , berry.innerHTML);
+//=====================================================================
+const orange = document.querySelector('[data-foodtype = "squishy"');
+orange.style.backgroundColor = "orange";
+console.log(orange);
+console.log("I found the fruit : " ,orange.innerHTML);
+//=====================================================================
+const list = document.getElementsByTagName("li");
+console.log(list);
+//=====================================================================
+console.log("Using for loop here");
+for(var i = 0; i < list.length; i++) {
+	console.log(list[i].innerHTML);
+	list[i].style.width = "100px";
+	document.querySelector("li:nth-child(4)").style.backgroundColor = "green";
+	list[i].style.listStyleType = "none";
+}
+//=====================================================================
+const list2 = document.querySelectorAll("li");
+console.log(list2);
+//=====================================================================
+console.log("Using forEach here");
+list2.forEach(list2 => {
+	console.log(list2.innerHTML);
+	list2.style.border = "1px solid black";
+});	
+</script>
+</body>
+</html>
